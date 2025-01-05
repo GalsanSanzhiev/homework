@@ -1,0 +1,22 @@
+.block {
+    background-color: rgb(133, 142, 139);
+    box-sizing: border-box;
+    width: 1000px;
+    height: 500px;
+    overflow: auto;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 5px solid #000;
+    
+}
+.text {
+    background-color: blueviolet;
+    width: 200px;
+    height: 185px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 50px;
+    
+}
