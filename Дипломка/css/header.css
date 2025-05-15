@@ -1,0 +1,156 @@
+.header {
+    margin-bottom: 30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+.header__img {
+    max-height: 21px;
+}
+
+.nav__list {
+    display: flex;
+    gap: 33px;
+    list-style: none;
+
+}
+
+.nav__list img {
+    vertical-align: middle;
+}
+
+
+.burger-icon {
+    display: none;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+    display: block;
+    width: 40px;
+    height: 5px;
+    border-radius: 100px;
+    background: #101010;
+
+    transition: .4s;
+}
+
+.burger-icon span {
+    position: relative;
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+    content: '';
+    position: absolute;
+}
+
+.burger-icon span::before {
+    top: -8px;
+}
+
+.burger-icon span::after {
+    bottom: -8px;
+}
+
+.burger-icon.active span {
+    background: transparent;
+}
+
+.burger-icon.active span::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.burger-icon.active span::after {
+    bottom: 0px;
+    transform: rotate(-45deg);
+}
+
+
+
+
+/* =================================== */
+
+.solutions {
+    position: relative;
+}
+
+
+.solutions__menu {
+    background: #fefefe;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-100px);
+    opacity: 0;
+    z-index: 2;
+    transition: all .5s;
+}
+
+.solutions__menu.active {
+    position: absolute;
+    transform: translateY(100px);
+    opacity: 1;
+    z-index: 2;
+}
+
+.nav__list.active img {
+    vertical-align: end;
+}
+
+.solutions__menu-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* ========================================= */
+.nav__list-link {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.nav__list-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list-item a {
+    margin-right: 4px;
+}
+
+
+.nav__tools {
+    display: flex;
+    gap: 27px;
+}
+
+.magnifier {
+    transition: all .4s;
+}
+
+.magnifier:hover {
+    transform: translateY(4px);
+}
+
+.cart {
+    transition: all .4s;
+}
+
+.cart:hover {
+    transform: translateY(4px);
+}
